@@ -1,0 +1,31 @@
+body {
+  font-family: "Tinos", serif;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+  }
+}
+.row {
+  display: flex;
+}
+button {
+  font-weight: 700;
+  font-size: 14px;
+  background: #ff7400;
+  padding: 10px;
+  color: #ffffff;
+}
+.title {
+  color: #000000;
+  font-size: calc(20px + 34 * (100vw / 1140));
+
+  font-family: "Tinos";
+  > span {
+    color: #d67e34;
+    padding-left: 5px;
+  }
+}

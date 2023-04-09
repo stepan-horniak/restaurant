@@ -2,16 +2,18 @@ body {
   font-family: "Tinos", serif;
   font-family: "Open Sans", sans-serif;
 }
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
-  @media (max-width: 767px) {
-  }
 }
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 button {
   font-weight: 700;
   font-size: 14px;

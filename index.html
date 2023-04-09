@@ -17,8 +17,8 @@
           <div class="header__row row">
             <div class="header__logo"><img src="./image/header/LOGO.svg" alt="" /></div>
             <div class="header__body-row header-body">
-              <nav class="header-body__nav header-nav active--">
-                <ul class="header-nav__list active--">
+              <nav class="header-body__nav header-nav">
+                <ul class="header-nav__list">
                   <li class="header-nav__item"><a href="#" class="header-nav__link">ГЛАВНАЯ</a></li>
                   <li class="header-nav__item"><a href="#" class="header-nav__link">МЕНЮ</a></li>
                   <li class="header-nav__item"><a href="#" class="header-nav__link">О НАС</a></li>
@@ -37,7 +37,7 @@
                 </div>
                 <button class="header-nav-bar__button button">ЗАКАЗ СТОЛИКА</button>
               </div>
-              <div class="header-body__burger header-body-burger active--">
+              <div class="header-body__burger header-body-burger">
                 <div class="header-body-burger__border"></div>
                 <div class="header-body-burger__border"></div>
                 <div class="header-body-burger__border"></div>
@@ -48,13 +48,14 @@
       </div>
     </header>
     <main>
-      <div class="section-top__wrapper"></div>
-      <div class="section-top__container container">
-        <div class="section-top__row row">
-          <div class="section-top__subtitle">Добро пожаловать в</div>
-          <div class="section-top__title">Наш ресторан</div>
-          <div class="section-top__info">ДОМ ЛУЧШЕЙ ЕДЫ</div>
-          <button class="section-top__button button">VIEW MENU</button>
+      <div class="section-top__wrapper">
+        <div class="section-top__container container">
+          <div class="section-top__row row">
+            <div class="section-top__subtitle">Добро пожаловать в</div>
+            <div class="section-top__title">Наш ресторан</div>
+            <div class="section-top__info">ДОМ ЛУЧШЕЙ ЕДЫ</div>
+            <button class="section-top__button button">VIEW MENU</button>
+          </div>
         </div>
       </div>
       <div class="section-intro__container container">
@@ -78,16 +79,16 @@
       </div>
       <div class="section-history">
         <div class="section-history__container container">
-          <div class="section-history__row row">
+          <div class="section-history__row row" data-navigation-js>
             <div class="section-history__info section-history-info">
-              <div class="section-history-info__title">Наша<span>История</span></div>
+              <div class="section-history-info__title title">Наша<span>История</span></div>
               <div class="section-history-info__text">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</div>
               <div class="section-history-info__statistics section-history-info-statistics">
                 <div class="section-history-info-statistics__element">
                   <div class="section-history-info-statistics__number">93</div>
                   <div class="section-history-info-statistics__what">Напитки</div>
                 </div>
-                <div class="section-history-info-statistics__element">
+                <div class="section-history-info-statistics__element" data-el="2">
                   <div class="section-history-info-statistics__number">206</div>
                   <div class="section-history-info-statistics__what">Еда</div>
                 </div>
@@ -123,8 +124,161 @@
           </div>
         </div>
       </div>
+      <div class="section-dishes">
+        <div class="section-dishes__container container">
+          <div class="section-dishes__row row">
+            <div class="section-dishes__title title">Наши<span>Блюда</span></div>
+            <div class="section-dishes__benefits section-dishes-benefits">
+              <div class="section-dishes-benefits__image"><img src="./image/dishes/dishes.png" alt="" /></div>
+              <div class="section-dishes-benefits__content dishes-content">
+                <div class="dishes-content__menu dishes-content-menu">
+                  <div class="dishes-content-menu__image">
+                    <img class="" src="./image/dishes/dishes-1.svg" alt="" />
+                  </div>
+
+                  <div class="dishes-content-menu__info dishes-content-menu-info">
+                    <div class="dishes-content-menu-info__name">Гамбургер мини</div>
+                    <div class="dishes-content-menu-info__border"></div>
+                    <div class="dishes-content-menu-info__price">220 грн</div>
+                  </div>
+                </div>
+                <div class="dishes-content__menu dishes-content-menu">
+                  <div class="dishes-content-menu__image">
+                    <img class="" src="./image/dishes/dishes-1.svg" alt="" />
+                  </div>
+                  <div class="dishes-content-menu__info dishes-content-menu-info">
+                    <div class="dishes-content-menu-info__name">Гамбургер мини</div>
+                    <div class="dishes-content-menu-info__border"></div>
+                    <div class="dishes-content-menu-info__price">220 грн</div>
+                  </div>
+                </div>
+                <div class="dishes-content__menu dishes-content-menu">
+                  <div class="dishes-content-menu__image">
+                    <img class="" src="./image/dishes/dishes-1.svg" alt="" />
+                  </div>
+                  <div class="dishes-content-menu__info dishes-content-menu-info">
+                    <div class="dishes-content-menu-info__name">Гамбургер мини</div>
+                    <div class="dishes-content-menu-info__border"></div>
+                    <div class="dishes-content-menu-info__price">220 грн</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-recomended">
+        <div class="section-recomended__wrapper">
+          <div class="section-recomended__container conrtainer">
+            <div class="section-recomended__row row">
+              <div class="section-recomended__title title">Наше меню</div>
+              <div class="section-recomended__info-row recomended-card">
+                <div class="recomended-card__wrapper">
+                  <div class="recomended-card__recomended">RECOMMENDED</div>
+                  <div class="recomended-card__image">
+                    <img src="./image/recommended/recommended-burger.png" alt="" />
+                  </div>
+                  <div class="recomended-card__image-gram">
+                    <img src="./image/recommended/Ellipse.svg" alt="" />
+                    <p>420</p>
+                  </div>
+                  <div class="recomended-card__title">Гамбургер макси</div>
+                  <div class="recomended-card__info">Максимально толстый слой мяса</div>
+                  <div class="recomended-card__button">ЗАКАЗАТЬ</div>
+                </div>
+                <div class="recomended-card__wrapper recomended-card__wrapper-two">
+                  <div class="recomended-card__image">
+                    <img src="./image/recommended/recommended-burger.png" alt="" />
+                  </div>
+                  <div class="recomended-card__image-gram">
+                    <img src="./image/recommended/Ellipse.svg" alt="" />
+                    <p>420</p>
+                  </div>
+                  <div class="recomended-card__title">Гамбургер макси</div>
+                  <div class="recomended-card__info">Максимально толстый слой мяса</div>
+                  <div class="recomended-card__button">ЗАКАЗАТЬ</div>
+                </div>
+                <div class="recomended-card__wrapper recomended-card__wrapper-three">
+                  <div class="recomended-card__image">
+                    <img src="./image/recommended/recommended-burger.png" alt="" />
+                  </div>
+                  <div class="recomended-card__image-gram">
+                    <img src="./image/recommended/Ellipse.svg" alt="" />
+                    <p>420</p>
+                  </div>
+                  <div class="recomended-card__title">Гамбургер макси</div>
+                  <div class="recomended-card__info">Максимально толстый слой мяса</div>
+                  <div class="recomended-card__button">ЗАКАЗАТЬ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-visitor">
+        <div class="section-visitor__container container">
+          <div class="section-visitor__row">
+            <div class="section-visitor__coments">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</div>
+            <div class="section-visitor__userpic">
+              <img src="./image/visitor/visitor.png" alt="" />
+            </div>
+            <div class="section-visitor__user-info">Посетитель</div>
+            <div class="section-visitor__user-name">Николай</div>
+            <div class="section-visitor__breadcrumbs section-visitor-breadcrumbs">
+              <div class="section-visitor-breadcrumbs__circle"></div>
+              <div class="section-visitor-breadcrumbs__circle"></div>
+              <div class="section-visitor-breadcrumbs__circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-gallery">
+        <div class="section-gallery__container container">
+          <div class="section-gallery__title title">Галерея<span>Блюд</span></div>
+          <div class="section-gallery__row">
+            <div class="section-gallery__image gallery-image-1">
+              <img src="./image/gallery/gallery-1.png" alt="" />
+            </div>
+            <div class="section-gallery__image gallery-image-2">
+              <img src="./image/gallery/gallery-2.png" alt="" />
+            </div>
+            <div class="section-gallery__image gallery-image-3">
+              <img src="./image/gallery/gallery-3.png" alt="" />
+            </div>
+            <div class="section-gallery__image gallery-image-4">
+              <img src="./image/gallery/gallery-4.png" alt="" />
+            </div>
+            <div class="section-gallery__image gallery-image-5">
+              <img src="./image/gallery/gallery-5.png" alt="" />
+            </div>
+            <div class="section-gallery__image gallery-image-6">
+              <img src="./image/gallery/gallery-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cooks">
+        <div class="section-cooks__container container">
+          <div class="section-cooks__title title">Наши<span>Повара</span></div>
+          <div class="section-cooks__row">
+            <div class="section-cooks__image cooks-image-1">
+              <img src="./image/cooks/cooks-1.png" alt="" />
+            </div>
+            <div class="section-cooks__image cooks-image-2">
+              <img src="./image/cooks/cooks-2.png" alt="" />
+            </div>
+            <div class="section-cooks__image cooks-image-3">
+              <img src="./image/cooks/cooks-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="footer__image"></div>
+      </div>
+    </footer>
     <script src="./script/script.js"></script>
   </body>
 </html>
