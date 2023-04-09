@@ -846,6 +846,7 @@
 .section-cooks {
   &__container {
     padding-top: calc(40px + 60 * (100vw / 1140));
+    margin-bottom: calc(40px + 60 * (100vw / 1140));
   }
 
   &__title {

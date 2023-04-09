@@ -1040,6 +1040,7 @@ h6 {
 
 .section-cooks__container {
   padding-top: calc(40px + 5.2631578947vw);
+  margin-bottom: calc(40px + 5.2631578947vw);
 }
 .section-cooks__title {
   display: -webkit-box;
